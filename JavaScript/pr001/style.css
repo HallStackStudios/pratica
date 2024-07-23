@@ -1,0 +1,11 @@
+body {
+    font: normal 17pt arial;
+    background-color: rgb(235, 234, 234);
+}
+.caixa-nome {
+    border: 2px solid black;
+    max-width: 70%;
+    padding: 8px;
+    margin-top: 3px;
+    background-color: beige;
+}
