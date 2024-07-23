@@ -6,6 +6,7 @@ body {
     border: 2px solid black;
     max-width: 92.5%;
     padding: 8px;
-    margin-top: 3px;
-    background-color: Aquamarine;
+    margin-top: 5px;
+    background-color: Beige;
+    border-radious: 15px
 }
