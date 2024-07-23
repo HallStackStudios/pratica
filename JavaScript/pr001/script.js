@@ -1,3 +1,4 @@
+var cadastro = window.confirm('Você já tem cadastro no "projeto.formulario"?')
 var nome = window.prompt('Qual é seu nome completo?')
 var idade = Number(window.prompt('Qual é sua idade?'))
 var nascimento = window.prompt('Qual é sua data de nascimento?')
