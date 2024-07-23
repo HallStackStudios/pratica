@@ -7,6 +7,6 @@ body {
     max-width: 92.5%;
     padding: 8px;
     margin-top: 5px;
-    background-color: Beige;
-    border-radius: 15px
+    background-color: rgba(219, 219, 219, 0.836);
+    border-radius: 15px;
 }
