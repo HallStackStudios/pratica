@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Verde claro - cor de fundo */
+    color: #404040; /* Cinza escuro - cor do texto */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #000000; /* Verde escuro - cor de fundo do cabeçalho */
+    color: #000000; /* Branco - cor do texto do cabeçalho */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para o conteúdo principal */
+div {
+    padding: 20px;
+    background-color: #000000;
+}
+
+div {
+    background-image: linear-gradient(to right, #34b366, #34a77f, #369a9c); /* Verde claro - cor de fundo da seção */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000000; /* Verde escuro - cor do título da seção */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000708; /* Verde escuro - cor do texto do label */
+}
+
+input[type="password"],
+input[type="email"],
+
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4ac280; /* Verde escuro - cor da borda do input */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #70b18d; /* Verde escuro - cor de fundo do botão */
+    color: #fff; /* Branco - cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3c5e48; /* Verde médio - cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #000000; /* Verde escuro - cor de fundo do rodapé */
+    color: #32bf4d; /* Branco - cor do texto do rodapé */
+    padding: 20px;
+    text-align: center;
+}
+.especial {
+    margin: 15px;
+    height: 43px;
+    width: 50%;
+    background-color: #3689b9a4;
+}
+.especial:hover {
+    background-color: #47c2f3a4;
+}
+#especialsenha {
+    text-decoration: none;
+    height: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #000000;
+}
+#especialsenha:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+#h1especial {
+    text-align: center;
+    font-size: 15px;
+}
+#h2especial {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+#especialemail {
+    color: white;
+    text-align: center;
+}
+.especialdiv {
+    margin: 3%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; /* Isso é opcional, apenas para centralizar verticalmente na página inteira */
+}

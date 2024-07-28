@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficos</title>
+  <link rel="shortcut icon" href="issoai2.jpg" type="image/x-icon">
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #000000;
+      color: rgb(0, 0, 0);
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+    nav {
+      background-color: #000000;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #33c73e;
+    }
+    main {
+      background-image: linear-gradient(to right, #35bc55, #35a780, #3693aa);
+      box-shadow: 5px, 5px, 15px, #35bc55;
+      width: 30%;
+      height: 50%;
+      border: 50px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    footer {
+      background-color: #141414;
+      color: #359e92;
+      padding: 20px 0;
+      margin-top: 50px;
+      text-align: center;
+    }
+    button {
+    padding: 10px;
+    background-color: #70b18d; /* Verde escuro - cor de fundo do botão */
+    color: #fff; /* Branco - cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #3c5e48; /* Verde médio - cor de fundo do botão ao passar o mouse */
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000708; /* Verde escuro - cor do texto do label */
+    margin: 20px;
+    align-items: center;
+}
+form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    }
+    form textarea {
+      height: 100px;
+    }
+    form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+    form button:hover {
+      background-color: #0056b3;
+    }
+    .introlabel {
+    align-items: center;
+    width: 90%;
+    }
+    #introbutton {
+    background-color: #33c73e;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    width: 80%;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="favicon.jpg" alt="a">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <ul>
+        <li><a href="#funcionalidade">Funcionalidade</a></li>
+        <li><a href="#precos">Preços</a></li>
+        <li><a href="#cultura">sobre nós</a></li>
+      </ul>
+    </div>
+  </nav>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <br>
+  <main class="container">
+    <section id="contato" style="margin-top: 50px;">
+      <h2>Contato</h2>
+      <form>
+        <div style="margin-bottom: 15px;" class="introlabel">
+          <label for="nome" id="introlabel">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div style="margin-bottom: 15px;" class="introlabel">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div style="margin-bottom: 15px;" class="introlabel">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <div class="container"><button type="submit">Enviar Mensagem</button></div>
+      </form>
+      <div class="container"><button type="button" id="introbutton">Chamar no WhatsApp</button></div>
+    </section>
+  </main>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <div class="container">
+      <p>Dados da Empresa: CNPJ- _Endereço- Rua Doutor Alberto Torres 114 HALLSTACK_Cidade-São Fídelis_Estado-Rio de Janeiro</p>
+    </div>
+  </footer>
+
+</body>
+</html>

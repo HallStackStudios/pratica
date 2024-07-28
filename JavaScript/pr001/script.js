@@ -2,15 +2,8 @@ if  (confirm('Você já tem cadastro?')) {
     console.log("Usuário clicou em OK")
     var cgmail = window.prompt('Insira seu e-mail: ')
     var csenha = window.prompt('Insira sua senha: ')
-    document.write(`<div class="caixa-nome">Seu nome é: <strong>${nome}</strong><br></div>`)
-    document.write(`<div class="caixa-nome">Sua idade é: <strong>${idade}</strong><br></div>`)
-    document.write(`<div class="caixa-nome">Sua data de nascimento é: <strong>${nascimento}</strong><br></div>`)
-    document.write(`<div class="caixa-nome">Seu gênero é: <strong>${genero}</strong><br></div>`)
-    document.write(`<div class="caixa-nome">Seu salário mensal é: <strong>${salario}</strong><br></div>`)
-    document.write(`<div class="caixa-nome">Seu endereço de e-mail é: <strong>${cgmail}</strong><br></div>`)
-    document.write(`<div class="caixa-nome">Seu número de telefone é: <strong>${telefone}</strong><br></div>`)
-    document.write(`<div class="caixa-nome">Seu endereço é: <strong>${endereço}</strong><br></div>`)
-    document.write(`<div class="caixa-nome">Sua(s) habilidade(s) são: <strong>${habilidade}</strong><br></div>`)
+    var kortaq = 1 < 100?"não foi encontrada":"foi encontrada"
+    document.write(`<div id="caixa"><strong>Sua conta ${kortaq}</strong></div>`)
 } else {
     console.log("Usuário clicou em Cancelar")
     var nome = window.prompt('Qual é seu nome completo?')
