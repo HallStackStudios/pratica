@@ -17,7 +17,8 @@ body {
     padding: 20px;
     margin: auto;
     height: 300px;
-    margin-top: 15%px;
+    margin-top: 10%;
+    background-color: rgba(219, 219, 219, 0.836);
 }
 h1 {
     text-align: center;
