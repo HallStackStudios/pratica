@@ -2,8 +2,8 @@ if  (confirm('Você já tem cadastro?')) {
     console.log("Usuário clicou em OK")
     var cgmail = window.prompt('Insira seu e-mail: ')
     var csenha = window.prompt('Insira sua senha: ')
-    var kortaq = csenha == "#2103Meir!"?"não foi encontrada":"foi encontrada"
-    document.write(`<div id="caixa"><strong>Sua conta ${kortaq}</strong></div>`)
+    var kortaq = csenha == "#2103Meir!"?"foi encontrada":"não foi encontrada"
+    document.write(`<div id="caixa"><h1><strong>Sua conta ${kortaq}</strong></h1></div>`)
 } else {
     console.log("Usuário clicou em Cancelar")
     var nome = window.prompt('Qual é seu nome completo?')
