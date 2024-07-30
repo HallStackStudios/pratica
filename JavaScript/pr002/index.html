@@ -12,17 +12,19 @@
         <h1>Calculadora</h1>
         <input type="number" name="num1" id="num1" class="input-number">
         <input type="number" name="num2" id="num2" class="input-number">
-        <input type="button" value="Calcular" id="input-button">
+        <input type="button" value="Somar" id="input-button" onclick="somar()">
         <div id="quad-div">O resultado está aqui:</div>
     </main>
 
     <script>
-        function clicar() {
-        window.document.addEventListener('click', clicar)
-        var n1 = Number(window.document.getElementById('num1'))
-        var n2 = Number(window.document.getElementById('num2'))
+        function somar() {
+        var num1 = window.document.getElementById('num1')
+        var num2 = window.document.getElementById('num2')
+        var quad = window.document.getElementById('quad-div')
+        var n1 = Number(num1.value)
+        var n2 = Number(num2.value)
         var total = n1 + n2
-        var quad = window.document.getElementById('quad-div').innerText = total
+        quad.innerHTML = `A soma dos valores inseridos é: ${total}`
         }
     </script>
 </body>
