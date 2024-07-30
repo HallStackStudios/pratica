@@ -17,12 +17,13 @@
     </main>
 
     <script>
-        var n1 = window.document.getElementById('num1')
-        var n2 = window.document.getElementById('num2')
-        var quad = window.document.getElementById('quad-div')
+        function clicar() {
+        window.document.addEventListener('click', clicar)
+        var n1 = Number(window.document.getElementById('num1'))
+        var n2 = Number(window.document.getElementById('num2'))
         var total = n1 + n2
-        n1 = Number(n1.value)
-        n2 = Number(n2.value)
+        var quad = window.document.getElementById('quad-div').innerText = total
+        }
     </script>
 </body>
 </html>
