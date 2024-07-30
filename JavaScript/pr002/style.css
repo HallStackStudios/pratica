@@ -19,7 +19,8 @@ main {
     height: 30px;
 }
 #input-button {
-    width: 70px;
+    width: 100px;
+    margin-top: 20px;
     background-color: whitesmoke;
     height: 35px;
     text-decoration: none;
