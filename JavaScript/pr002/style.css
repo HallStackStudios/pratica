@@ -6,7 +6,7 @@ body {
 }
 main {
     width: 70%;
-    height:500px;
+    height: 500px;
     background-color: rgb(255, 166, 0);
     box-shadow: 1px 2px 5px rgba(105, 105, 105, 0.452);
     padding: 20px;
@@ -24,17 +24,19 @@ main {
     height: 35px;
     text-decoration: none;
     border: 0px;
+    transition: border-radius 0.3s ease 0.1s; /* Adicionando transição */
 }
 #input-button:hover {
     border: 1px solid rgba(0, 0, 0, 0.644);
-}
-input:hover {
-    border-radius: 10px;
 }
 input {
     border-radius: 3px;
     border: 1px solid black;
     font-size: 18px;
+    transition: border-radius 0.2s ease 0.1s; /* Adicionando transição */
+}
+input:hover {
+    border-radius: 10px;
 }
 div {
     font-size: 30px;
