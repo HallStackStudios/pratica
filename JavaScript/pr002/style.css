@@ -15,11 +15,11 @@ main {
     margin-top: 20px;
 }
 .input-number {
-    width: 15%;
+    width: 120px;
     height: 30px;
 }
 #input-button {
-    width: 10%;
+    width: 70px;
     background-color: whitesmoke;
     height: 35px;
     text-decoration: none;
