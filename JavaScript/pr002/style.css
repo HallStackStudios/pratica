@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.938);
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -13,4 +13,30 @@ main {
     margin: auto;
     border-radius: 15px;
     margin-top: 20px;
+}
+.input-number {
+    width: 15%;
+    height: 30px;
+}
+#input-button {
+    width: 10%;
+    background-color: whitesmoke;
+    height: 35px;
+    text-decoration: none;
+    border: 0px;
+}
+#input-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.644);
+}
+input:hover {
+    border-radius: 10px;
+}
+input {
+    border-radius: 3px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+div {
+    font-size: 30px;
+    margin-top: 40px;
 }

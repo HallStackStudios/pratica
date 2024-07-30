@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora (Básica)</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="3233478.png" type="image/x-icon">
 </head>
 <body>
     <main>
         <h1>Calculadora</h1>
+        <input type="number" name="num1" id="num1" class="input-number">
+        <input type="number" name="num2" id="num2" class="input-number">
+        <input type="button" value="Calcular" id="input-button">
+        <div id="quad-div">O resultado está aqui:</div>
     </main>
 
-    <script src="script.js"></script>
+    <script>
+        var n1 = window.document.getElementById('num1')
+        var n2 = window.document.getElementById('num2')
+        var quad = window.document.getElementById('quad-div')
+        var total = n1 + n2
+        n1 = Number(n1.value)
+        n2 = Number(n2.value)
+    </script>
 </body>
 </html>
