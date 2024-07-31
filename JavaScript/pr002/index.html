@@ -11,21 +11,45 @@
     <main>
         <h1>Calculadora</h1>
         <input type="number" name="num1" id="num1" class="input-number">
+        <input type="text" name="elementos" id="input-text" placeholder="Digite a operação (+, -, *, /)">
         <input type="number" name="num2" id="num2" class="input-number">
-        <input type="button" value="Somar" id="input-button" onclick="somar()">
+        <input type="button" value="Calcular" id="input-button">
         <div id="quad-div">O resultado está aqui:</div>
     </main>
 
     <script>
-        function somar() {
-        var num1 = window.document.getElementById('num1')
-        var num2 = window.document.getElementById('num2')
-        var quad = window.document.getElementById('quad-div')
-        var n1 = Number(num1.value)
-        var n2 = Number(num2.value)
-        var total = n1 + n2
-        quad.innerHTML = `A soma dos valores inseridos é: <strong>${total}</strong>`
+        function calcular() {
+            var num1 = document.getElementById('num1');
+            var num2 = document.getElementById('num2');
+            var operador = document.getElementById('input-text').value;
+            var quad = document.getElementById('quad-div');
+            var n1 = Number(num1.value);
+            var n2 = Number(num2.value);
+            var total;
+
+            if (operador === '+') {
+                total = n1 + n2;
+                quad.innerHTML = `A soma dos valores inseridos é: <strong>${total}</strong>`;
+            } else if (operador === '-') {
+                total = n1 - n2;
+                quad.innerHTML = `A subtração dos valores inseridos é: <strong>${total}</strong>`;
+            } else if (operador === '*') {
+                total = n1 * n2;
+                quad.innerHTML = `A multiplicação dos valores inseridos é: <strong>${total}</strong>`;
+            } else if (operador === '/') {
+                if (n2 !== 0) {
+                    total = n1 / n2;
+                    quad.innerHTML = `A divisão dos valores inseridos é: <strong>${total}</strong>`;
+                } else {
+                    quad.innerHTML = `Erro: divisão por zero não é permitida.`;
+                }
+            } else {
+                quad.innerHTML = `Operador inválido. Use +, -, * ou /.`;
+            }
         }
+
+        // Adiciona o evento de clique ao botão de calcular
+        document.getElementById('input-button').addEventListener('click', calcular);
     </script>
 </body>
 </html>
