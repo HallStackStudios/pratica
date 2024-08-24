@@ -1,0 +1,26 @@
+body {
+    font: normal 17pt arial;
+    background-color: rgb(235, 234, 234);
+}
+.caixa-nome {
+    border: 2px solid black;
+    max-width: 92.5%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: rgba(219, 219, 219, 0.836);
+    border-radius: 15px;
+}
+#caixa {
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.486);
+    width: 35%;
+    padding: 20px;
+    margin: auto;
+    height: 300px;
+    margin-top: 10%;
+    background-color: rgba(219, 219, 219, 0.836);
+}
+h1 {
+    text-align: center;
+    font-size: 32px;
+}

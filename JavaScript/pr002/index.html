@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora (Básica)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="3233478.png" type="image/x-icon">
+    <style>
+        body {
+    background-color: rgba(0, 0, 0, 0.938);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+main {
+    width: 85%;
+    height: 500px;
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 188, 64), rgb(255, 166, 0));
+    box-shadow: 1px 2px 5px rgba(105, 105, 105, 0.452);
+    padding: 20px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.input-number {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 12px;
+}
+#input-text {
+    width: 20px;
+    text-align: center;
+    margin-top: 20px;
+    height: 30px;
+    text-decoration: none;
+    transition: border-radius 0.3s ease 0.1s; /* Adicionando transição */
+}
+#input-button {
+    width: 100px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    height: 35px;
+    text-decoration: none;
+    border: 0px;
+    transition: border-radius 0.3s ease 0.1s; /* Adicionando transição */
+}
+#input-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.644);
+}
+input {
+    border-radius: 3px;
+    border: 1px solid black;
+    font-size: 18px;
+    transition: border-radius 0.2s ease 0.1s; /* Adicionando transição */
+}
+input:hover {
+    border-radius: 10px;
+}
+div {
+    font-size: 30px;
+    margin-top: 40px;
+}
+#quad-div {
+    margin: auto;
+    width: 90%;
+    text-align: right;
+    background-color: black;
+    color: rgb(255, 188, 64);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div id="quad-div">:</div>
+        <input type="number" name="num1" id="num1" class="input-number">
+        <input type="text" name="elementos" id="input-text" placeholder="Digite a operação (+, -, *, /)">
+        <input type="number" name="num2" id="num2" class="input-number">
+        <input type="button" value="Calcular" id="input-button">
+    </main>
+
+    <script>
+        function calcular() {
+            var num1 = document.getElementById('num1');
+            var num2 = document.getElementById('num2');
+            var operador = document.getElementById('input-text').value;
+            var quad = document.getElementById('quad-div');
+            var n1 = Number(num1.value);
+            var n2 = Number(num2.value);
+            var total;
+
+            if (operador === '+') {
+                total = n1 + n2;
+                quad.innerHTML = `<strong>${total}</strong>`;
+            } else if (operador === '-') {
+                total = n1 - n2;
+                quad.innerHTML = `<strong>${total}</strong>`;
+            } else if (operador === '*') {
+                total = n1 * n2;
+                quad.innerHTML = `<strong>${total}</strong>`;
+            } else if (operador === '/') {
+                if (n2 !== 0) {
+                    total = n1 / n2;
+                    quad.innerHTML = `<strong>${total}</strong>`;
+                } else {
+                    quad.innerHTML = `Erro: divisão por zero não é permitida.`;
+                }
+            } else {
+                quad.innerHTML = `Operador inválido. Use +, -, * ou /.`;
+            }
+        }
+
+        // Adiciona o evento de clique ao botão de calcular
+        document.getElementById('input-button').addEventListener('click', calcular);
+    </script>
+</body>
+</html>
